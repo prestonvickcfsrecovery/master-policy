@@ -1,0 +1,17 @@
+{
+  "name": "cfs-coaching-curriculum",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "setup": "node scripts/setup.mjs"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "pg": "^8.13.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
