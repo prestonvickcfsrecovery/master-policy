@@ -205,3 +205,9 @@ h1.title{font-family:var(--read);font-size:32px;line-height:1.18;font-weight:500
 .diff.one{grid-template-columns:1fr}
 .field.muted{opacity:.5}
 .field.muted select{background:var(--shade);cursor:not-allowed}
+
+/* ---------- keeping work between tabs ---------- */
+.thread-top{display:flex;align-items:center;gap:12px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.thread-top .note{margin-right:auto}
+.answer-actions{margin-top:8px}
+.submit-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}

@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { plain, when, md } from "@/lib/md";
+import { load, save, clear } from "@/lib/persist";
 
 const NEW_TYPE = "New policy";
 const TYPES = [NEW_TYPE, "Change to existing guidance", "Clarification", "Removal", "Editorial"];
@@ -40,6 +41,7 @@ export default function Changes({ user }) {
     kind: "edit", entryId: "", title: "", type: "Change to existing guidance", proposedText: "",
     rationale: "", urgency: "Routine", newCode: "", newTitle: "", newSummary: "", newSection: "universal",
   });
+  const [ready, setReady] = useState(false);
   const [preview, setPreview] = useState(false);
   const [formatting, setFormatting] = useState(false);
   const isNew = form.kind === "new";
@@ -72,11 +74,22 @@ export default function Changes({ user }) {
   }
 
   useEffect(() => {
+    const saved = load("proposal", null);
     loadAll().then((list) => {
       const want = params.get("entry");
-      setForm((f) => ({ ...f, entryId: (want && list.some((x) => x.id === want)) ? want : (list[0]?.id || "") }));
+      setForm((f) => {
+        const base = saved ? { ...f, ...saved } : f;
+        const entryId = (want && list.some((x) => x.id === want))
+          ? want
+          : (base.entryId && list.some((x) => x.id === base.entryId) ? base.entryId : (list[0]?.id || ""));
+        return { ...base, entryId };
+      });
+      setReady(true);
     });
   }, [params]);
+
+  // Hold the draft proposal so a trip to the Policy or Ask tab doesn't lose it.
+  useEffect(() => { if (ready) save("proposal", form); }, [form, ready]);
 
   const suggestCode = useMemo(() => {
     const sec = SECTIONS.find((x) => x.key === form.newSection);
@@ -125,6 +138,7 @@ export default function Changes({ user }) {
     if (r.error) { setMsg(r.error); return; }
     setForm((f) => ({ ...f, title: "", proposedText: "", rationale: "", newTitle: "", newSummary: "", newCode: "" }));
     setPreview(false);
+    clear("proposal");
     setMsg("Submitted. The policy owner will see it.");
     loadAll();
   }
@@ -367,9 +381,18 @@ export default function Changes({ user }) {
                 <option>Safety — fast track</option>
               </select>
             </div>
-            <button className="btn" onClick={submit} disabled={saving}>
-              {saving ? "Submitting…" : "Submit proposal"}
-            </button>
+            <div className="submit-row">
+              <button className="btn" onClick={submit} disabled={saving}>
+                {saving ? "Submitting…" : "Submit proposal"}
+              </button>
+              {(form.title || form.proposedText || form.rationale) && (
+                <button className="linkish" onClick={() => {
+                  if (!confirm("Clear this draft?")) return;
+                  setForm((f) => ({ ...f, title: "", proposedText: "", rationale: "", newTitle: "", newSummary: "", newCode: "" }));
+                  setPreview(false); clear("proposal");
+                }}>Clear draft</button>
+              )}
+            </div>
             {msg && <p className="note" style={{ marginTop: 8 }}>{msg}</p>}
           </div>
         </div>

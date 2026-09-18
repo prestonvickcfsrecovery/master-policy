@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { md } from "@/lib/md";
+import { load, save, clear } from "@/lib/persist";
 
 const STARTERS = [
   "A Platinum client wants to pause for 10 weeks. What are the rules?",
@@ -15,15 +16,33 @@ export default function Ask({ initialName }) {
   const params = useSearchParams();
   const [chat, setChat] = useState([]);
   const [draft, setDraft] = useState("");
+  const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
   const boxRef = useRef(null);
   const ctlRef = useRef(null);
   const endRef = useRef(null);
 
+  // Bring back the conversation and any half-typed question from last time.
+  useEffect(() => {
+    const saved = load("chat", []);
+    if (saved.length) setChat(saved.map((m) => ({ ...m, pending: false })));
+    const box = load("askDraft", "");
+    if (box) setDraft(box);
+    setReady(true);
+  }, []);
+
   useEffect(() => {
     const q = params.get("q");
     if (q) { setDraft(q); boxRef.current?.focus(); }
   }, [params]);
+
+  // Keep the stored copy in step, but never store a half-streamed answer.
+  useEffect(() => {
+    if (!ready || busy) return;
+    save("chat", chat.slice(-20).map(({ role, content, cites }) => ({ role, content, cites })));
+  }, [chat, ready, busy]);
+
+  useEffect(() => { if (ready) save("askDraft", draft); }, [draft, ready]);
 
   useEffect(() => { endRef.current?.scrollIntoView({ block: "end" }); }, [chat]);
 
@@ -92,6 +111,18 @@ export default function Ask({ initialName }) {
     }
   }
 
+  // Carry an answer over to the Changes tab as the starting wording.
+  function startProposal(text) {
+    const draftProposal = load("proposal", {});
+    save("proposal", { ...draftProposal, proposedText: text });
+    router.push("/changes");
+  }
+
+  function newConversation() {
+    setChat([]); setDraft("");
+    clear("chat"); clear("askDraft");
+  }
+
   return (
     <div className="page-solo">
       <div className="ask">
@@ -111,6 +142,13 @@ export default function Ask({ initialName }) {
           </>
         )}
 
+        {chat.length > 0 && (
+          <div className="thread-top">
+            <span className="note">Your conversation is kept while you move between tabs.</span>
+            <button className="linkish" onClick={newConversation}>Start over</button>
+          </div>
+        )}
+
         <div className="thread">
           {chat.map((m, i) => (
             <div className={`turn ${m.role === "user" ? "me" : ""}`} key={i}>
@@ -122,6 +160,13 @@ export default function Ask({ initialName }) {
                   <div className="txt note"><span className="spin" /> Thinking…</div>
                 ) : (
                   <div className="txt" dangerouslySetInnerHTML={{ __html: md(m.content) }} />
+                )}
+                {m.role === "assistant" && !m.pending && m.content && (
+                  <div className="answer-actions">
+                    <button className="linkish" onClick={() => startProposal(m.content)}>
+                      Start a proposal from this
+                    </button>
+                  </div>
                 )}
                 {!!m.cites?.length && !m.pending && (
                   <div className="cites">

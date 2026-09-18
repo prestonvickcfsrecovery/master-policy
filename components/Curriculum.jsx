@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { md, esc, when } from "@/lib/md";
+import { load, save } from "@/lib/persist";
 
 const SECTIONS = [
   { key: "front", label: "Start here" },
@@ -37,12 +38,22 @@ export default function Curriculum({ canRestore = false }) {
         if (d.error) setErr(d.error);
         setEntries(d.entries || []);
         if (d.entries?.length) {
+          // a link wins, then whatever was open last, then the first entry
           const hash = decodeURIComponent((location.hash || "").replace("#", ""));
-          setSel(d.entries.find((e) => e.id === hash)?.id || d.entries[0].id);
+          const last = load("open", "");
+          setSel(
+            d.entries.find((e) => e.id === hash)?.id ||
+            d.entries.find((e) => e.id === last)?.id ||
+            d.entries[0].id
+          );
+          setFind(load("find", ""));
         }
       })
       .catch(() => setErr("Couldn't load the policy."));
   }, []);
+
+  useEffect(() => { if (sel) save("open", sel); }, [sel]);
+  useEffect(() => { save("find", find); }, [find]);
 
   const entry = useMemo(
     () => (entries || []).find((e) => e.id === sel) || null,
