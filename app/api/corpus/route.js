@@ -20,11 +20,24 @@ import crypto from "node:crypto";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const CONN =
-  process.env.DATABASE_URL ||
-  process.env.POSTGRES_URL ||
-  process.env.POSTGRES_PRISMA_URL ||
-  process.env.POSTGRES_URL_NON_POOLING;
+// The Neon integration sets several of these; whichever exists is used. If only
+// the PG* pieces are present, the string is assembled from them.
+function connectionString() {
+  const direct =
+    process.env.DATABASE_URL ||
+    process.env.POSTGRES_URL ||
+    process.env.POSTGRES_PRISMA_URL ||
+    process.env.POSTGRES_URL_NON_POOLING ||
+    process.env.DATABASE_URL_UNPOOLED;
+  if (direct) return direct;
+  const { PGHOST, PGUSER, PGPASSWORD, PGDATABASE, PGPORT } = process.env;
+  if (PGHOST && PGUSER && PGDATABASE) {
+    const auth = `${encodeURIComponent(PGUSER)}${PGPASSWORD ? `:${encodeURIComponent(PGPASSWORD)}` : ""}`;
+    return `postgresql://${auth}@${PGHOST}:${PGPORT || 5432}/${PGDATABASE}?sslmode=require`;
+  }
+  return null;
+}
+const CONN = connectionString();
 
 let pool;
 function db() {
@@ -75,19 +88,68 @@ function buildQuickref(entries) {
 
 export async function GET(req) {
   const url = new URL(req.url);
-  const token = url.searchParams.get("token") || req.headers.get("x-corpus-token") || "";
-  const expected = process.env.CORPUS_TOKEN || "";
+  // .trim() on both sides on purpose. Pasting a value into Vercel's box very
+  // often carries a trailing newline or space, which made a correct token fail
+  // with a bare "Bad token" and nothing to go on.
+  const token = (url.searchParams.get("token") || req.headers.get("x-corpus-token") || "").trim();
+  // CORPUS_TOKEN is the name to use if you link ONE Vercel shared variable to both
+  // projects; POLICY_CORPUS_TOKEN is accepted so either naming works.
+  const expectedRaw = process.env.CORPUS_TOKEN || process.env.POLICY_CORPUS_TOKEN || "";
+  const expected = expectedRaw.trim();
 
   if (!expected) {
+    // Env vars are injected at DEPLOY time, so setting one does not affect the
+    // deployment already serving this URL. That is nearly always what's wrong
+    // here, so say it plainly and show what this deployment can actually see.
     return Response.json(
-      { error: "CORPUS_TOKEN is not set on this project. Add it in Vercel → Settings → Environment Variables, then redeploy." },
+      {
+        error: "CORPUS_TOKEN is not visible to this deployment.",
+        most_likely_cause:
+          "The variable was added or changed after this deployment was built. Vercel injects environment variables at build time, so you need to redeploy: Deployments → the latest one → ⋯ → Redeploy.",
+        also_check:
+          process.env.VERCEL_ENV === "production"
+            ? ["You are on the production deployment, so scope is not the problem - a redeploy is what's needed."]
+            : [
+                `You are on a "${process.env.VERCEL_ENV || "unknown"}" deployment, not production. The variable is scoped to Production only, so it is not present here.`,
+                "Either test the production domain, or enable the variable for this environment as well.",
+              ],
+        this_deployment: {
+          environment: process.env.VERCEL_ENV || null,
+          commit: (process.env.VERCEL_GIT_COMMIT_SHA || "").slice(0, 7) || null,
+          commit_message: process.env.VERCEL_GIT_COMMIT_MESSAGE || null,
+          url: process.env.VERCEL_URL || null,
+        },
+        // names only, never values - tells you whether ANY token reached the build
+        corpus_vars_this_deployment_can_see: ["CORPUS_TOKEN", "POLICY_CORPUS_TOKEN"].filter((k) => !!process.env[k]),
+        database_connection_detected: !!CONN,
+      },
       { status: 503 }
     );
   }
   // constant-time compare so the token can't be guessed a character at a time
   const a = Buffer.from(token), b = Buffer.from(expected);
   if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) {
-    return Response.json({ error: "Bad token" }, { status: 401 });
+    // Lengths and a first/last-character fingerprint only - never the token
+    // itself, and only when a token was actually supplied.
+    const fp = (s) => (s.length >= 8 ? `${s.slice(0, 4)}…${s.slice(-4)}` : "(too short)");
+    return Response.json(
+      {
+        error: "Bad token",
+        ...(token
+          ? {
+              why: a.length !== b.length
+                ? "The token in your URL and the one stored in CORPUS_TOKEN are different lengths, so they are not the same value."
+                : "Same length, different characters - the values don't match.",
+              sent: { length: a.length, looks_like: fp(token) },
+              stored: { length: b.length, looks_like: fp(expected), had_surrounding_whitespace: expectedRaw !== expectedRaw.trim() },
+              fix: a.length !== b.length
+                ? "Re-copy the value into Vercel → Settings → Environment Variables → CORPUS_TOKEN (make sure nothing is cut off and no extra characters are pasted), then REDEPLOY. Remember a redeploy is required for the new value to take effect."
+                : "Re-copy the value into both places, then redeploy.",
+            }
+          : { why: "No token was supplied. Add ?token=... to the URL." }),
+      },
+      { status: 401 }
+    );
   }
   if (!CONN) {
     return Response.json({ error: "No database connection string in the environment." }, { status: 503 });
