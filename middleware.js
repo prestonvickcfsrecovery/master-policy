@@ -1,63 +1,73 @@
 // Master Policy app — route protection.
 //
-// WHAT CHANGED: /api/corpus is now exempt from the Google sign-in gate. It
-// authenticates with CORPUS_TOKEN instead, because the reply tool calls it
-// server-to-server during its build and has no browser session to offer.
-// Without this exemption it always gets {"error":"Not signed in"}.
+// WHAT THIS DOES: lets /api/corpus through the Google sign-in gate. That
+// endpoint authenticates with CORPUS_TOKEN instead, because the reply tool
+// calls it server-to-server during its build and has no browser session.
+// Everything else behaves as it did before.
 //
-// ⚠ BEFORE YOU COMMIT: two values below are marked CHECK. Compare them against
-// your current middleware.js. If either differs, use yours — getting them wrong
-// locks your team out of the app.
+// The two constants below are no longer guesses - both are taken from the
+// app's own code:
+//   SESSION_COOKIE  = "cfs_session"  →  lib/auth.js, `const COOKIE = "cfs_session"`
+//   SIGNED_OUT_PATH = "/signed-out"  →  app/signed-out/page.jsx
+//
+// Safety note: this middleware is a gate, not the lock. Real enforcement lives
+// where it always did - requireUser() and currentUser() in lib/auth.js, called
+// from the route handlers and server components. Those verify the HMAC
+// signature, check expiry, and check ALLOWED_DOMAINS / ALLOWED_EMAILS. Edge
+// middleware can't do any of that, so it only checks the cookie is present.
 
 import { NextResponse } from "next/server";
 
+// From lib/auth.js: `const COOKIE = "cfs_session"` (exported as SESSION_COOKIE).
+const SESSION_COOKIE = "cfs_session";
+
+// The page an unauthenticated visitor is sent to. It carries the
+// "Sign in with Google" button.
+const SIGNED_OUT_PATH = "/signed-out";
+
 // ── Paths that must work WITHOUT a signed-in user ──────────────────────────
 const PUBLIC_PREFIXES = [
+  SIGNED_OUT_PATH, // the destination itself - without this it redirects to
+                   // itself forever (ERR_TOO_MANY_REDIRECTS)
   "/api/corpus",   // token-authenticated: the reply tool's policy pull
-  "/api/auth",     // the Google OAuth flow itself - it cannot require a session
+  "/api/auth",     // the Google OAuth flow - it cannot require a session
   "/api/setup",    // guarded by SETUP_TOKEN, not by a session
 ];
 
 // Next.js internals and static assets never need a session.
-const ASSET_RE = /^\/(_next|favicon\.ico|robots\.txt|sitemap\.xml|.*\.(png|jpg|jpeg|svg|ico|webp|css|js|woff2?|txt))$/;
-
-// CHECK #1 — the session cookie's name. Whatever your sign-in route sets.
-// Common values: "session", "auth", "sid", "mp_session".
-const SESSION_COOKIE = "session";
-
-// CHECK #2 — where an unauthenticated PAGE request gets sent to sign in.
-// If your app starts the Google flow at a different path, use that path.
-const LOGIN_PATH = "/api/auth/login";
+const ASSET_RE = /^\/(_next|favicon\.ico|icon\.svg|robots\.txt|sitemap\.xml|.*\.(png|jpg|jpeg|svg|ico|webp|css|js|woff2?|txt))$/;
 
 export function middleware(req) {
-  const { pathname, search } = req.nextUrl;
+  const { pathname } = req.nextUrl;
 
-  // 1. Always let the public paths through, untouched.
-  if (PUBLIC_PREFIXES.some((p) => pathname === p || pathname.startsWith(p + "/")) || ASSET_RE.test(pathname)) {
+  // 1. Public paths and static assets pass straight through.
+  if (
+    PUBLIC_PREFIXES.some((p) => pathname === p || pathname.startsWith(p + "/")) ||
+    ASSET_RE.test(pathname)
+  ) {
     return NextResponse.next();
   }
 
-  // 2. Everything else needs a session cookie.
-  //    Middleware runs on the edge and cannot verify the HMAC signature (that
-  //    needs node crypto), so this is a presence check only. The real
-  //    verification stays where it already is - in the route handlers and
-  //    server components, via lib/auth.js. This is a gate, not the lock.
-  const hasSession = !!req.cookies.get(SESSION_COOKIE)?.value;
-  if (hasSession) return NextResponse.next();
+  // 2. Everything else needs the session cookie to be present.
+  if (req.cookies.get(SESSION_COOKIE)?.value) return NextResponse.next();
 
-  // 3. No session. API routes get JSON; pages get sent to sign in.
+  // 3. No session: API routes get JSON, pages go to the signed-out page.
   if (pathname.startsWith("/api/")) {
     return NextResponse.json({ error: "Not signed in" }, { status: 401 });
   }
+
+  // Second guard against a redirect loop. Step 1 already covers this; this
+  // makes a loop impossible even if the list above is edited later.
+  if (pathname === SIGNED_OUT_PATH || pathname.startsWith(SIGNED_OUT_PATH + "/")) {
+    return NextResponse.next();
+  }
+
   const url = req.nextUrl.clone();
-  url.pathname = LOGIN_PATH;
-  // remember where they were headed so sign-in can return them there
-  url.search = `?next=${encodeURIComponent(pathname + search)}`;
+  url.pathname = SIGNED_OUT_PATH;
+  url.search = ""; // no ?next= - that was what made the looping URL grow
   return NextResponse.redirect(url);
 }
 
 export const config = {
-  // Run on everything except Next.js internals. The exemptions above do the
-  // real filtering, so this stays broad and there's only one list to maintain.
   matcher: ["/((?!_next/static|_next/image).*)"],
 };
