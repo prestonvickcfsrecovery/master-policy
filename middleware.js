@@ -27,7 +27,7 @@ const SESSION_COOKIE = "session";
 
 // CHECK #2 — where an unauthenticated PAGE request gets sent to sign in.
 // If your app starts the Google flow at a different path, use that path.
-const LOGIN_PATH = "/api/auth/login";
+const LOGIN_PATH = "/signed-out";
 
 export function middleware(req) {
   const { pathname, search } = req.nextUrl;
