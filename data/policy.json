@@ -13,7 +13,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Document"
+  "sourceNote": "Master Program Policy v3.6 · Document"
  },
  {
   "id": "doc-ctl",
@@ -29,7 +29,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Document"
+  "sourceNote": "Master Program Policy v3.6 · Document"
  },
  {
   "id": "qr-school",
@@ -45,7 +45,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery School"
+  "sourceNote": "Master Program Policy v3.6 · Recovery School"
  },
  {
   "id": "qr-academy",
@@ -61,7 +61,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery Academy"
+  "sourceNote": "Master Program Policy v3.6 · Recovery Academy"
  },
  {
   "id": "qr-platinum",
@@ -77,7 +77,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "qr-caregiver",
@@ -86,14 +86,14 @@
   "code": "QR",
   "title": "Caregiver Add-On",
   "summary": "Reference table: Policy, Rule.",
-  "body": "**6-month $1,500 | 12-month $2,500 (add-on to Platinum)**\n\n| Policy | Rule |\n|---|---|\n| Eligibility | Platinum members only. One caregiver per Thriver. Required for minors under 16 and Thrivers unable to join calls. |\n| What\u2019s included | Dedicated caregiver Discord chat, 30-min onboarding call, weekly group call, module series, monthly check-ins. |\n| Coach load | Each caregiver = 1.0 CLU. No separate caregiver cap. |\n| Existing caregivers | Grandfathered at no cost; keep current service (no new calls). Full package available to purchase. |\n| Pricing - standalone | 6-month $1,500 (~$250/mo) / 12-month $2,500 (~$208/mo). |\n| Pricing - bundle | 6-mo $6,497 PIF / 12-mo $9,497 PIF. See Caregiver Add-On detail. |\n| Cancellation | Tandem with Platinum: signed up and cancelled together. Refunds per Universal Policy U1 (CSD). |",
+  "body": "**6-month $1,500 | 12-month $2,500 (add-on to Platinum)**\n\n| Policy | Rule |\n|---|---|\n| Eligibility | Platinum members only. One caregiver per Thriver. Required for minors under 16 and Thrivers unable to join calls. |\n| What’s included | Dedicated caregiver Discord chat, 30-min onboarding call, weekly group call, module series, monthly check-ins. |\n| Coach load | Each caregiver = 1.0 CLU. No separate caregiver cap. |\n| Existing caregivers | Grandfathered at no cost; keep current service (no new calls). Full package available to purchase. |\n| Pricing - standalone | 6-month $1,500 (~$250/mo) / 12-month $2,500 (~$208/mo). |\n| Pricing - bundle | 6-mo $6,497 PIF / 12-mo $9,497 PIF. See Caregiver Add-On detail. |\n| Cancellation | Tandem with Platinum: signed up and cancelled together. Refunds per Universal Policy U1 (CSD). |",
   "program": "caregiver",
   "zone": "caregiver",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Caregiver Add-On"
+  "sourceNote": "Master Program Policy v3.6 · Caregiver Add-On"
  },
  {
   "id": "qr-continuity",
@@ -109,7 +109,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Continuity"
+  "sourceNote": "Master Program Policy v3.6 · Continuity"
  },
  {
   "id": "qr-beyond",
@@ -125,7 +125,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
  },
  {
   "id": "u1",
@@ -141,7 +141,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Universal"
+  "sourceNote": "Master Program Policy v3.6 · Universal"
  },
  {
   "id": "u2",
@@ -157,7 +157,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Universal"
+  "sourceNote": "Master Program Policy v3.6 · Universal"
  },
  {
   "id": "u3",
@@ -173,7 +173,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Universal"
+  "sourceNote": "Master Program Policy v3.6 · Universal"
  },
  {
   "id": "u4",
@@ -189,7 +189,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Universal"
+  "sourceNote": "Master Program Policy v3.6 · Universal"
  },
  {
   "id": "u5",
@@ -205,7 +205,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Universal"
+  "sourceNote": "Master Program Policy v3.6 · Universal"
  },
  {
   "id": "u6",
@@ -221,7 +221,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Universal"
+  "sourceNote": "Master Program Policy v3.6 · Universal"
  },
  {
   "id": "u7",
@@ -230,14 +230,14 @@
   "code": "U7",
   "title": "Ascension Prorated Refund",
   "summary": "When a client ascends from one program to a higher-tier program mid-billing cycle, they receive a prorated refund for the unused portion of their current membership.",
-  "body": "When a client ascends from one program to a higher-tier program mid-billing cycle, they receive a prorated refund for the unused portion of their current membership. This replaces the previous practice of issuing full-month refunds at time of ascension.\n\nCalculation:\n\nFormula: (Monthly Price \u00f7 Days in Billing Cycle) \u00d7 Remaining Days = Refund Amount\n\nPlease use this Refund Calculator as needed: https://cfsrecovery.co/prorated-refund-caculator\n\nExample\n\n| Detail | Value |\n|---|---|\n| Program | Recovery Academy ($297/mo) |\n| Billing cycle | May 1 \u2013 May 31 (31 days) |\n| Ascension date | May 15 |\n| Days used | 14 (May 1\u201314) |\n| Remaining days | 17 (May 15\u201331) |\n| Refund | ($297 \u00f7 31) \u00d7 17 = $162.87 |\n\nProcess\n\n| Step | Action | Owner |\n|---|---|---|\n| 1 | Client confirms ascension. New program enrollment is completed. | Enrollment / Coach |\n| 2 | Calculate the prorated refund using the formula above or the Prorated Refund Calculator. | Operations |\n| 3 | Issue refund to original payment method within 5 business days. | Operations |\n| 4 | Remove previous program access on ascension date. New program access begins immediately. | Operations |\n| 5 | Log refund amount, calculation, and ascension details in client roster. | Operations |\n\nNOTE: If the ascension happens on day 1 of the billing cycle (same day as payment), a full refund is issued. If it happens on the last day of the billing cycle, no refund is issued. CSD approval is required for all ascension refunds.",
+  "body": "When a client ascends from one program to a higher-tier program mid-billing cycle, they receive a prorated refund for the unused portion of their current membership. This replaces the previous practice of issuing full-month refunds at time of ascension.\n\nCalculation:\n\nFormula: (Monthly Price ÷ Days in Billing Cycle) × Remaining Days = Refund Amount\n\nPlease use this Refund Calculator as needed: https://cfsrecovery.co/prorated-refund-caculator\n\nExample\n\n| Detail | Value |\n|---|---|\n| Program | Recovery Academy ($297/mo) |\n| Billing cycle | May 1 – May 31 (31 days) |\n| Ascension date | May 15 |\n| Days used | 14 (May 1–14) |\n| Remaining days | 17 (May 15–31) |\n| Refund | ($297 ÷ 31) × 17 = $162.87 |\n\nProcess\n\n| Step | Action | Owner |\n|---|---|---|\n| 1 | Client confirms ascension. New program enrollment is completed. | Enrollment / Coach |\n| 2 | Calculate the prorated refund using the formula above or the Prorated Refund Calculator. | Operations |\n| 3 | Issue refund to original payment method within 5 business days. | Operations |\n| 4 | Remove previous program access on ascension date. New program access begins immediately. | Operations |\n| 5 | Log refund amount, calculation, and ascension details in client roster. | Operations |\n\nNOTE: If the ascension happens on day 1 of the billing cycle (same day as payment), a full refund is issued. If it happens on the last day of the billing cycle, no refund is issued. CSD approval is required for all ascension refunds.",
   "program": "universal",
   "zone": "universal",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Universal"
+  "sourceNote": "Master Program Policy v3.6 · Universal"
  },
  {
   "id": "u8",
@@ -246,14 +246,14 @@
   "code": "U8",
   "title": "Unsigned Service Agreement",
   "summary": "All Platinum members are required to sign a Service Agreement before beginning the program.",
-  "body": "All Platinum members are required to sign a Service Agreement before beginning the program. This policy outlines the escalation process when a client does not respond within the expected timeframe.\n\n| Step | Timing | Action | Sent by | Access status |\n|---|---|---|---|---|\n| Request 1 | Within 48 hours of enrollment | Service agreement sent via email with signing instructions. | Brent (Ops) | Active |\n| Request 2 | 5 business days after Request 1 | Follow-up message via Discord or Skool DM. Friendly reminder. | Brent (Ops) | Active |\n| Final Notice | 5 business days after Request 2 | Final notice from leadership. 3-day signing deadline clearly stated. | Miguel | Active until deadline |\n| Deadline passed | 3 days after Final Notice | Membership paused. Access removed until agreement is signed. | Operations | Paused |\n| 14+ days | 14 days after pause | Escalate to CSD. Treat as potential voluntary exit. | CSD | Removed |\n\nRequest 2 message (Brent):\n\n\u201cHey [Name]! Just a quick follow-up.  I sent over your Service Agreement a few days ago and wanted to make sure it didn\u2019t get lost in the shuffle. When you get a moment, could you take a look and get that signed? It\u2019s just a standard part of getting everything set up for your Platinum experience. Let me know if you have any questions!\u201d\n\nFinal notice message (Miguel):\n\n\u201cHey [Name], hope you\u2019re doing well! I wanted to reach out personally because we\u2019ve sent the Platinum Service Agreement over a couple of times now and it looks like it hasn\u2019t been signed yet. The Service Agreement is a required step for all Platinum members, and we do need it completed to keep your membership active. We need this signed by [DATE \u2014 3 business days from today]. If we don\u2019t receive it by then, we\u2019ll need to pause your membership and access until it\u2019s taken care of. If you have any questions about the agreement or want to hop on a quick call to go through it, I\u2019m happy to do that. Just let me know!\u201d\n\nNOTE: Paused time does not extend the Platinum term. The membership clock continues. Once the agreement is signed, access is restored within 24 hours. If a client has questions or concerns about the agreement, offer to walk through it on a call. Do not pressure, just require. Log all outreach attempts and dates in the client roster.\n\nNOTE: This policy mirrors the U2 Late Payment escalation structure: two friendly requests from Ops, then a leadership final notice with a clear deadline. The tone should remain warm throughout. The goal is compliance, not confrontation.",
+  "body": "All Platinum members are required to sign a Service Agreement before beginning the program. This policy outlines the escalation process when a client does not respond within the expected timeframe.\n\n| Step | Timing | Action | Sent by | Access status |\n|---|---|---|---|---|\n| Request 1 | Within 48 hours of enrollment | Service agreement sent via email with signing instructions. | Brent (Ops) | Active |\n| Request 2 | 5 business days after Request 1 | Follow-up message via Discord or Skool DM. Friendly reminder. | Brent (Ops) | Active |\n| Final Notice | 5 business days after Request 2 | Final notice from leadership. 3-day signing deadline clearly stated. | Miguel | Active until deadline |\n| Deadline passed | 3 days after Final Notice | Membership paused. Access removed until agreement is signed. | Operations | Paused |\n| 14+ days | 14 days after pause | Escalate to CSD. Treat as potential voluntary exit. | CSD | Removed |\n\nRequest 2 message (Brent):\n\n“Hey [Name]! Just a quick follow-up.  I sent over your Service Agreement a few days ago and wanted to make sure it didn’t get lost in the shuffle. When you get a moment, could you take a look and get that signed? It’s just a standard part of getting everything set up for your Platinum experience. Let me know if you have any questions!”\n\nFinal notice message (Miguel):\n\n“Hey [Name], hope you’re doing well! I wanted to reach out personally because we’ve sent the Platinum Service Agreement over a couple of times now and it looks like it hasn’t been signed yet. The Service Agreement is a required step for all Platinum members, and we do need it completed to keep your membership active. We need this signed by [DATE — 3 business days from today]. If we don’t receive it by then, we’ll need to pause your membership and access until it’s taken care of. If you have any questions about the agreement or want to hop on a quick call to go through it, I’m happy to do that. Just let me know!”\n\nNOTE: Paused time does not extend the Platinum term. The membership clock continues. Once the agreement is signed, access is restored within 24 hours. If a client has questions or concerns about the agreement, offer to walk through it on a call. Do not pressure, just require. Log all outreach attempts and dates in the client roster.\n\nNOTE: This policy mirrors the U2 Late Payment escalation structure: two friendly requests from Ops, then a leadership final notice with a clear deadline. The tone should remain warm throughout. The goal is compliance, not confrontation.",
   "program": "universal",
   "zone": "universal",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Universal"
+  "sourceNote": "Master Program Policy v3.6 · Universal"
  },
  {
   "id": "u9",
@@ -262,14 +262,14 @@
   "code": "U9",
   "title": "Coach Transition Policy & Process",
   "summary": "Platinum Program Only",
-  "body": "Platinum Program Only\n\n### Policy Overview:\n\nEvery Platinum Thriver is assigned a main coach when they join Platinum, based on coach availability at the time of enrollment. As a Thriver's main coach, you are their primary point of contact and are responsible for tracking their overall progress and recovery journey.\n\nHaving a main coach doesn't restrict a Thriver from interacting with other coaches. Specialist coaches may still be brought in for specific calls or topics, and multiple coaches may occasionally be present in group settings. However, for accountability, load management, and consistency of care, every Platinum Thriver should have one clearly designated main coach at all times.\n\nKey Rules:\n\nThis policy applies to the Platinum program only.\n\nEach Thriver is allowed one coach transition total during their time in the program. Extenuating circumstances may allow for additional changes.\n\nIe. if we request the coach change, applicable life events.\n\nA transition must be formally requested and approved, informal arrangements do not count as an official transition.\n\nMultiple coaches being present in a chat does not change a Thriver's assigned main coach.\n\nThe Coach Transition Form is not publicly available. It lives internally on the Wiki and is only sent to a Thriver once a transition conversation has already taken place.\n\nWhen To Think About a Coach Transition:\n\nWhen an non-primary coach is being @\u2019d more frequently then the main coach\n\nIf the non-primary coach has had 2 or more consecutive 1 on 1 calls with the Thriver\n\nNOTE: This does not designate the need for a change, but are the signals if applicable.\n\nThere's a mismatch in coaching style or communication approach.\n\nThe Thriver has a specific need that aligns better with another coach's specialization.\n\nThe current coaching relationship isn't progressing effectively.\n\nA coach's availability or capacity changes significantly.\n\nWho Initiates the Conversation\n\nEither you or the Thriver may initiate a transition conversation, but the preferred approach is for you, the coach, to initiate if you feel a transition would better serve the Thriver.\n\nIf a Thriver initiates the conversation, treat this as a potential red flag and note it internally. It may indicate a breakdown in the coaching relationship, unmet expectations, or a communication issue that warrants a closer look before proceeding. The client success team should have a brief internal conversation about the context before moving forward.\n\nCoach Alignment Before Any Commitment\n\nBefore sending the form, promising anything, or agreeing to a transition with a Thriver, the coaches involved should always discuss the situation among themselves and contact the Client Success Director. No commitment, verbal or written, should be made to a Thriver or Client until this internal alignment has taken place. This ensures the decision is fully vetted and supported before the Thriver is given any expectation about the outcome.\n\nThe Form Formalizes, It Doesn't Start\n\nIn either case, the transition conversation should happen before the form is sent. The form is not a starting point, it's used to formalize a decision that has already been discussed.\n\n$47/month -- Policies specific to this program",
+  "body": "Platinum Program Only\n\n### Policy Overview:\n\nEvery Platinum Thriver is assigned a main coach when they join Platinum, based on coach availability at the time of enrollment. As a Thriver's main coach, you are their primary point of contact and are responsible for tracking their overall progress and recovery journey.\n\nHaving a main coach doesn't restrict a Thriver from interacting with other coaches. Specialist coaches may still be brought in for specific calls or topics, and multiple coaches may occasionally be present in group settings. However, for accountability, load management, and consistency of care, every Platinum Thriver should have one clearly designated main coach at all times.\n\nKey Rules:\n\nThis policy applies to the Platinum program only.\n\nEach Thriver is allowed one coach transition total during their time in the program. Extenuating circumstances may allow for additional changes.\n\nIe. if we request the coach change, applicable life events.\n\nA transition must be formally requested and approved, informal arrangements do not count as an official transition.\n\nMultiple coaches being present in a chat does not change a Thriver's assigned main coach.\n\nThe Coach Transition Form is not publicly available. It lives internally on the Wiki and is only sent to a Thriver once a transition conversation has already taken place.\n\nWhen To Think About a Coach Transition:\n\nWhen an non-primary coach is being @’d more frequently then the main coach\n\nIf the non-primary coach has had 2 or more consecutive 1 on 1 calls with the Thriver\n\nNOTE: This does not designate the need for a change, but are the signals if applicable.\n\nThere's a mismatch in coaching style or communication approach.\n\nThe Thriver has a specific need that aligns better with another coach's specialization.\n\nThe current coaching relationship isn't progressing effectively.\n\nA coach's availability or capacity changes significantly.\n\nWho Initiates the Conversation\n\nEither you or the Thriver may initiate a transition conversation, but the preferred approach is for you, the coach, to initiate if you feel a transition would better serve the Thriver.\n\nIf a Thriver initiates the conversation, treat this as a potential red flag and note it internally. It may indicate a breakdown in the coaching relationship, unmet expectations, or a communication issue that warrants a closer look before proceeding. The client success team should have a brief internal conversation about the context before moving forward.\n\nCoach Alignment Before Any Commitment\n\nBefore sending the form, promising anything, or agreeing to a transition with a Thriver, the coaches involved should always discuss the situation among themselves and contact the Client Success Director. No commitment, verbal or written, should be made to a Thriver or Client until this internal alignment has taken place. This ensures the decision is fully vetted and supported before the Thriver is given any expectation about the outcome.\n\nThe Form Formalizes, It Doesn't Start\n\nIn either case, the transition conversation should happen before the form is sent. The form is not a starting point, it's used to formalize a decision that has already been discussed.\n\n$47/month -- Policies specific to this program",
   "program": "universal",
   "zone": "universal",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Universal"
+  "sourceNote": "Master Program Policy v3.6 · Universal"
  },
  {
   "id": "s1",
@@ -285,7 +285,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery School"
+  "sourceNote": "Master Program Policy v3.6 · Recovery School"
  },
  {
   "id": "s2",
@@ -301,7 +301,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery School"
+  "sourceNote": "Master Program Policy v3.6 · Recovery School"
  },
  {
   "id": "s3",
@@ -317,7 +317,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery School"
+  "sourceNote": "Master Program Policy v3.6 · Recovery School"
  },
  {
   "id": "s4",
@@ -333,7 +333,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery School"
+  "sourceNote": "Master Program Policy v3.6 · Recovery School"
  },
  {
   "id": "s5",
@@ -349,7 +349,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery School"
+  "sourceNote": "Master Program Policy v3.6 · Recovery School"
  },
  {
   "id": "s6",
@@ -365,7 +365,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery School"
+  "sourceNote": "Master Program Policy v3.6 · Recovery School"
  },
  {
   "id": "s7",
@@ -381,7 +381,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery School"
+  "sourceNote": "Master Program Policy v3.6 · Recovery School"
  },
  {
   "id": "a1",
@@ -397,7 +397,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery Academy"
+  "sourceNote": "Master Program Policy v3.6 · Recovery Academy"
  },
  {
   "id": "a2",
@@ -413,7 +413,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery Academy"
+  "sourceNote": "Master Program Policy v3.6 · Recovery Academy"
  },
  {
   "id": "a3",
@@ -429,7 +429,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery Academy"
+  "sourceNote": "Master Program Policy v3.6 · Recovery Academy"
  },
  {
   "id": "a4",
@@ -445,7 +445,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery Academy"
+  "sourceNote": "Master Program Policy v3.6 · Recovery Academy"
  },
  {
   "id": "a5",
@@ -461,7 +461,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery Academy"
+  "sourceNote": "Master Program Policy v3.6 · Recovery Academy"
  },
  {
   "id": "a6",
@@ -477,7 +477,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery Academy"
+  "sourceNote": "Master Program Policy v3.6 · Recovery Academy"
  },
  {
   "id": "a7",
@@ -493,7 +493,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Recovery Academy"
+  "sourceNote": "Master Program Policy v3.6 · Recovery Academy"
  },
  {
   "id": "p1",
@@ -509,7 +509,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p2",
@@ -525,7 +525,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p3",
@@ -541,7 +541,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p4",
@@ -557,7 +557,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p5",
@@ -573,7 +573,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p6",
@@ -589,7 +589,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p7",
@@ -605,7 +605,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p8",
@@ -621,7 +621,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p9",
@@ -637,7 +637,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p10",
@@ -653,7 +653,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p11",
@@ -662,14 +662,14 @@
   "code": "P11",
   "title": "Affiliate Program - New Clients",
   "summary": "There will be times when a new client wants to give credit to an existing client.",
-  "body": "There will be times when a new client wants to give credit to an existing client. There are two scenarios.\n\nExisting Client is Not Setup as affiliate (most common)\n\nReach out to existing clients and offer an additional 1 on 1 check in call for their contribution to the program. See example script below.\n\nScript\n\nExisting Client is Setup as affiliate\n\nLet New Client know that they have been \u201crewarded\u201d for bringing them into the program",
+  "body": "There will be times when a new client wants to give credit to an existing client. There are two scenarios.\n\nExisting Client is Not Setup as affiliate (most common)\n\nReach out to existing clients and offer an additional 1 on 1 check in call for their contribution to the program. See example script below.\n\nScript\n\nExisting Client is Setup as affiliate\n\nLet New Client know that they have been “rewarded” for bringing them into the program",
   "program": "platinum",
   "zone": "platinum",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p12",
@@ -678,14 +678,14 @@
   "code": "P12",
   "title": "Platinum Cohorts: Structure & Schedule",
   "summary": "Platinum is delivered through cohorts.",
-  "body": "Platinum is delivered through cohorts. There are currently three active cohorts. Start times are held consistent wherever possible so Enrollment can place incoming Thrivers correctly, so Thrivers can select their preferred time at sign-up, and to avoid Zoom-link issues.\n\n| Cohort | Days | Times | Notes |\n|---|---|---|---|\n| Platinum A1 | Tuesdays, Fridays | 8AM PDT / 9AM MDT / 10AM CDT / 11AM EDT / 4PM BST / 5PM CEST | Typically kicks off the first Tuesday of the month |\n| Platinum A2 | Mondays, Thursdays | Set with Enrollment | Typically kicks off mid-month; some flexibility depending on Enrollment |\n| Platinum B | Tuesdays & Thursdays, or Tuesdays & Fridays | 5PM PDT / 6PM MDT / 7PM CDT / 8PM EDT / 8AM AWST / 10AM AEST | Typically kicks off the first Tuesday of the month |\n\nSome flexibility on days and kickoffs is possible, but times are kept consistent wherever possible. Any change to a cohort\u2019s days or times must be cleared with Enrollment and the CSD first, because of the downstream effects on sign-ups and scheduling.",
+  "body": "Platinum is delivered through cohorts. There are currently three active cohorts. Start times are held consistent wherever possible so Enrollment can place incoming Thrivers correctly, so Thrivers can select their preferred time at sign-up, and to avoid Zoom-link issues.\n\n| Cohort | Days | Times | Notes |\n|---|---|---|---|\n| Platinum A1 | Tuesdays, Fridays | 8AM PDT / 9AM MDT / 10AM CDT / 11AM EDT / 4PM BST / 5PM CEST | Typically kicks off the first Tuesday of the month |\n| Platinum A2 | Mondays, Thursdays | Set with Enrollment | Typically kicks off mid-month; some flexibility depending on Enrollment |\n| Platinum B | Tuesdays & Thursdays, or Tuesdays & Fridays | 5PM PDT / 6PM MDT / 7PM CDT / 8PM EDT / 8AM AWST / 10AM AEST | Typically kicks off the first Tuesday of the month |\n\nSome flexibility on days and kickoffs is possible, but times are kept consistent wherever possible. Any change to a cohort’s days or times must be cleared with Enrollment and the CSD first, because of the downstream effects on sign-ups and scheduling.",
   "program": "platinum",
   "zone": "platinum",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p13",
@@ -694,14 +694,14 @@
   "code": "P13",
   "title": "Joining Multiple Cohorts",
   "summary": "If a Thriver asks to join more than one cohort, for scheduling reasons or otherwise, encourage them to choose the single cohort they can attend most consistently and use that as their group.",
-  "body": "If a Thriver asks to join more than one cohort, for scheduling reasons or otherwise, encourage them to choose the single cohort they can attend most consistently and use that as their group. Multiple-cohort participation has been allowed in the past, but Platinum works best when a Thriver builds consistency within one cohort: it creates continuity, strengthens the coaching relationship, and lets them fully engage with their group experience.\n\nIf a Thriver cannot attend a scheduled call, the coach leading their cohort posts the replay link in the Thriver\u2019s chat so they stay up to date.\n\nThe Thriver can also ask questions in their chat and receive support from the coaching team there.\n\nPrinciple - prioritise consistency and continuity within one cohort, using replays and chat support to bridge any missed calls.",
+  "body": "If a Thriver asks to join more than one cohort, for scheduling reasons or otherwise, encourage them to choose the single cohort they can attend most consistently and use that as their group. Multiple-cohort participation has been allowed in the past, but Platinum works best when a Thriver builds consistency within one cohort: it creates continuity, strengthens the coaching relationship, and lets them fully engage with their group experience.\n\nIf a Thriver cannot attend a scheduled call, the coach leading their cohort posts the replay link in the Thriver’s chat so they stay up to date.\n\nThe Thriver can also ask questions in their chat and receive support from the coaching team there.\n\nPrinciple - prioritise consistency and continuity within one cohort, using replays and chat support to bridge any missed calls.",
   "program": "platinum",
   "zone": "platinum",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p14",
@@ -717,7 +717,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p15",
@@ -726,14 +726,14 @@
   "code": "P15",
   "title": "Cohort Coach, Preferences & Changing Coaches",
   "summary": "Each Thriver works primarily with the coach leading their cohort.",
-  "body": "Each Thriver works primarily with the coach leading their cohort. We see consistently better outcomes when Thrivers maintain continuity with their cohort coach, as it improves communication, accountability, and the overall coaching experience.\n\nIf a Thriver requests a specific coach, or will only join Platinum if they can work with a particular coach, a Meet-and-Greet call with that coach may be offered before the first four weeks of Platinum begin.\n\nDuring the four-week cohort experience, Thrivers should be strongly encouraged to work primarily with the coach leading their chosen cohort.\n\nOnce the four-week cohort portion is complete, the Thriver may schedule future 1:1 calls with the coach of their choice.\n\nThis guideline covers coach preference and fit within the cohort. For a formal, ongoing change of a Thriver\u2019s assigned main coach, follow Universal Policy U9 (Coach Transition Policy & Process).",
+  "body": "Each Thriver works primarily with the coach leading their cohort. We see consistently better outcomes when Thrivers maintain continuity with their cohort coach, as it improves communication, accountability, and the overall coaching experience.\n\nIf a Thriver requests a specific coach, or will only join Platinum if they can work with a particular coach, a Meet-and-Greet call with that coach may be offered before the first four weeks of Platinum begin.\n\nDuring the four-week cohort experience, Thrivers should be strongly encouraged to work primarily with the coach leading their chosen cohort.\n\nOnce the four-week cohort portion is complete, the Thriver may schedule future 1:1 calls with the coach of their choice.\n\nThis guideline covers coach preference and fit within the cohort. For a formal, ongoing change of a Thriver’s assigned main coach, follow Universal Policy U9 (Coach Transition Policy & Process).",
   "program": "platinum",
   "zone": "platinum",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p16",
@@ -741,15 +741,15 @@
   "order": 470,
   "code": "P16",
   "title": "Platinum Discord Chat & Coach Communication",
-  "summary": "The coach leading a Thriver\u2019s cohort serves as the Thriver\u2019s primary point of contact within Discord.",
-  "body": "The coach leading a Thriver\u2019s cohort serves as the Thriver\u2019s primary point of contact within Discord.\n\nIf a Thriver would like input from another coach, they may tag that coach directly using the @ symbol, ensuring the coach\u2019s name highlights correctly. This notifies the coach that their support or perspective is being requested on a specific question.\n\nIn rare circumstances, another coach may be approved to take the lead in a Thriver\u2019s chat. This should happen only when there is a clear, compelling reason and must have prior approval from Leadership/CSD. Wherever possible, continuity with the cohort coach is maintained.\n\nPrinciple - maintain one clear primary coaching relationship and prioritise continuity, while allowing additional coaching support when requested and approved exceptions when warranted. Frequent tagging of a non-primary coach can be a signal to consider a transition (see Universal Policy U9).",
+  "summary": "The coach leading a Thriver’s cohort serves as the Thriver’s primary point of contact within Discord.",
+  "body": "The coach leading a Thriver’s cohort serves as the Thriver’s primary point of contact within Discord.\n\nIf a Thriver would like input from another coach, they may tag that coach directly using the @ symbol, ensuring the coach’s name highlights correctly. This notifies the coach that their support or perspective is being requested on a specific question.\n\nIn rare circumstances, another coach may be approved to take the lead in a Thriver’s chat. This should happen only when there is a clear, compelling reason and must have prior approval from Leadership/CSD. Wherever possible, continuity with the cohort coach is maintained.\n\nPrinciple - maintain one clear primary coaching relationship and prioritise continuity, while allowing additional coaching support when requested and approved exceptions when warranted. Frequent tagging of a non-primary coach can be a signal to consider a transition (see Universal Policy U9).",
   "program": "platinum",
   "zone": "platinum",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "p17",
@@ -758,14 +758,14 @@
   "code": "P17",
   "title": "Rejoining or Repeating a Platinum Cohort",
   "summary": "This covers two situations:",
-  "body": "This covers two situations: a Thriver who missed part of a cohort for legitimate reasons and needs to rejoin, and a Thriver who completed (or largely completed) the cohort and would like to repeat the first four weeks for additional reinforcement.\n\nRejoining (missed content)\n\nIn rare circumstances a Thriver may need to withdraw from or miss part of the Platinum cohort due to unforeseen life events, health challenges, or scheduling conflicts. In these cases they may be permitted to rejoin and complete the first four weeks with a future cohort.\n\nThe Thriver\u2019s primary coach remains unchanged and continues to own the client record (CLU). The Thriver\u2019s Discord chat may be temporarily moved under the active cohort so the coach leading that cohort can easily share call links, replays, and other cohort communications.\n\nRepeating (reinforcement)\n\nIf a Thriver did not have a significant reason for missing the content but later wishes to take part in the first four weeks again, repeating the cohort may be offered as an exception for an additional fee.\n\nAs of June 9, 2026, the cost to repeat the first four weeks of the Platinum cohort is $750 USD. This pricing is subject to change at any time, and does not include any additional one-on-one calls.\n\nApproval for rejoining or repeating a cohort is reviewed case-by-case. Principle - preserve coaching continuity with the primary coach while providing reasonable pathways for Thrivers to access missed content or repeat the cohort experience when appropriate.\n\nAn add-on to Platinum, available only when attached to a Platinum membership. The product is identical on the 6-month and 12-month terms; only the price and term length differ.",
+  "body": "This covers two situations: a Thriver who missed part of a cohort for legitimate reasons and needs to rejoin, and a Thriver who completed (or largely completed) the cohort and would like to repeat the first four weeks for additional reinforcement.\n\nRejoining (missed content)\n\nIn rare circumstances a Thriver may need to withdraw from or miss part of the Platinum cohort due to unforeseen life events, health challenges, or scheduling conflicts. In these cases they may be permitted to rejoin and complete the first four weeks with a future cohort.\n\nThe Thriver’s primary coach remains unchanged and continues to own the client record (CLU). The Thriver’s Discord chat may be temporarily moved under the active cohort so the coach leading that cohort can easily share call links, replays, and other cohort communications.\n\nRepeating (reinforcement)\n\nIf a Thriver did not have a significant reason for missing the content but later wishes to take part in the first four weeks again, repeating the cohort may be offered as an exception for an additional fee.\n\nAs of June 9, 2026, the cost to repeat the first four weeks of the Platinum cohort is $750 USD. This pricing is subject to change at any time, and does not include any additional one-on-one calls.\n\nApproval for rejoining or repeating a cohort is reviewed case-by-case. Principle - preserve coaching continuity with the primary coach while providing reasonable pathways for Thrivers to access missed content or repeat the cohort experience when appropriate.\n\nAn add-on to Platinum, available only when attached to a Platinum membership. The product is identical on the 6-month and 12-month terms; only the price and term length differ.",
   "program": "platinum",
   "zone": "platinum",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Platinum"
+  "sourceNote": "Master Program Policy v3.6 · Platinum"
  },
  {
   "id": "cg1",
@@ -773,15 +773,15 @@
   "order": 490,
   "code": "CG1",
   "title": "Overview & Scope",
-  "summary": "The Caregiver Add-On gives a Platinum Thriver\u2019s caregiver their own supported relationship with CFS Recovery:",
-  "body": "The Caregiver Add-On gives a Platinum Thriver\u2019s caregiver their own supported relationship with CFS Recovery: a dedicated Discord chat managed by the Thriver\u2019s coach, caregiver-specific education, and a weekly group call. It makes explicit the support coaches have been delivering informally, defines its boundaries, and ensures the coach\u2019s workload is properly reflected and paid for.\n\nWhat it is not\n\nNot a standalone product. It is only available attached to a Platinum membership.\n\nNot therapy or counselling for the caregiver.\n\nNot an emergency or crisis service.\n\nNot a mediation service for family conflict.",
+  "summary": "The Caregiver Add-On gives a Platinum Thriver’s caregiver their own supported relationship with CFS Recovery:",
+  "body": "The Caregiver Add-On gives a Platinum Thriver’s caregiver their own supported relationship with CFS Recovery: a dedicated Discord chat managed by the Thriver’s coach, caregiver-specific education, and a weekly group call. It makes explicit the support coaches have been delivering informally, defines its boundaries, and ensures the coach’s workload is properly reflected and paid for.\n\nWhat it is not\n\nNot a standalone product. It is only available attached to a Platinum membership.\n\nNot therapy or counselling for the caregiver.\n\nNot an emergency or crisis service.\n\nNot a mediation service for family conflict.",
   "program": "caregiver",
   "zone": "caregiver",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Caregiver Add-On"
+  "sourceNote": "Master Program Policy v3.6 · Caregiver Add-On"
  },
  {
   "id": "cg2",
@@ -797,23 +797,23 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Caregiver Add-On"
+  "sourceNote": "Master Program Policy v3.6 · Caregiver Add-On"
  },
  {
   "id": "cg3",
   "section": "caregiver",
   "order": 510,
   "code": "CG3",
-  "title": "What\u2019s Included",
-  "summary": "All caregiver resources live inside the caregiver\u2019s Discord chat, including the Discord guidelines, support tools, and the overview video (https://cfsrecovery.co/caregiver-overview).",
-  "body": "| Component | Detail |\n|---|---|\n| 1-on-1 support chat | A separate Discord chat with the Thriver\u2019s coach, managed by that coach. |\n| Onboarding call | A 30-minute 1-on-1 call in the first month, walking the caregiver through how the product works. |\n| Weekly group call | A recurring caregiver group call. |\n| Call replays | Replays posted in Skool. |\n| Module series | Caregiver-specific module series covering the recovery model and the caregiver\u2019s role. |\n| Guides & tools | Caregiver-specific guides and support tools, housed in their Discord chat. |\n| Ongoing check-ins | Monthly 1-on-1 check-ins after month one, at the coach\u2019s discretion. |\n\nAll caregiver resources live inside the caregiver\u2019s Discord chat, including the Discord guidelines, support tools, and the overview video (https://cfsrecovery.co/caregiver-overview).",
+  "title": "What’s Included",
+  "summary": "All caregiver resources live inside the caregiver’s Discord chat, including the Discord guidelines, support tools, and the overview video (https://cfsrecovery.co/caregiver-overview).",
+  "body": "| Component | Detail |\n|---|---|\n| 1-on-1 support chat | A separate Discord chat with the Thriver’s coach, managed by that coach. |\n| Onboarding call | A 30-minute 1-on-1 call in the first month, walking the caregiver through how the product works. |\n| Weekly group call | A recurring caregiver group call. |\n| Call replays | Replays posted in Skool. |\n| Module series | Caregiver-specific module series covering the recovery model and the caregiver’s role. |\n| Guides & tools | Caregiver-specific guides and support tools, housed in their Discord chat. |\n| Ongoing check-ins | Monthly 1-on-1 check-ins after month one, at the coach’s discretion. |\n\nAll caregiver resources live inside the caregiver’s Discord chat, including the Discord guidelines, support tools, and the overview video (https://cfsrecovery.co/caregiver-overview).",
   "program": "caregiver",
   "zone": "caregiver",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Caregiver Add-On"
+  "sourceNote": "Master Program Policy v3.6 · Caregiver Add-On"
  },
  {
   "id": "cg4",
@@ -822,14 +822,14 @@
   "code": "CG4",
   "title": "Chat Rules & Coach Boundaries",
   "summary": "These three rules define the scope of the caregiver relationship.",
-  "body": "These three rules define the scope of the caregiver relationship. They protect the coach from being pulled into family mediation, and should be reflected in the Discord guideline doc and the coach SOP.\n\n| Rule | What it means in practice |\n|---|---|\n| Anchored to recovery | Every caregiver conversation stays focused on the Thriver\u2019s recovery. Recovery is the subject of the chat, not the relationship and not the caregiver\u2019s own treatment. |\n| Not an emergency hotline | The chat is governed by the Discord guideline doc. Crisis situations route out of the chat, not into it. |\n| Confidentiality with limits | What is said in each chat stays in that chat, unless withholding it would harm the Thriver\u2019s recovery or there is a safety concern. |",
+  "body": "These three rules define the scope of the caregiver relationship. They protect the coach from being pulled into family mediation, and should be reflected in the Discord guideline doc and the coach SOP.\n\n| Rule | What it means in practice |\n|---|---|\n| Anchored to recovery | Every caregiver conversation stays focused on the Thriver’s recovery. Recovery is the subject of the chat, not the relationship and not the caregiver’s own treatment. |\n| Not an emergency hotline | The chat is governed by the Discord guideline doc. Crisis situations route out of the chat, not into it. |\n| Confidentiality with limits | What is said in each chat stays in that chat, unless withholding it would harm the Thriver’s recovery or there is a safety concern. |",
   "program": "caregiver",
   "zone": "caregiver",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Caregiver Add-On"
+  "sourceNote": "Master Program Policy v3.6 · Caregiver Add-On"
  },
  {
   "id": "cg5",
@@ -838,14 +838,14 @@
   "code": "CG5",
   "title": "How It Works Operationally",
   "summary": "Coach capacity & CLUs",
-  "body": "Coach capacity & CLUs\n\nEach caregiver counts as 1.0 CLU. All caregivers and caregiver clients start at 1.0.\n\nNo separate caregiver cap. Caregivers are carried like standard CLUs, based on what each coach chooses to hold.\n\nChat structure\n\nOne caregiver chat per Thriver, held by the Thriver\u2019s own coach.\n\nThe coach therefore runs both sides, the Thriver\u2019s chat and the caregiver\u2019s chat, under the confidentiality rule in CG4.\n\nCall cadence\n\nThe weekly caregiver group call is the standard rhythm.\n\nMonth one includes the 30-minute 1-on-1 onboarding call.\n\nAfter that, individual check-ins are monthly or as-needed, at coach discretion.\n\nThe caregiver chat mirrors the Thriver chat on response time and cadence.\n\nExisting caregivers\n\nGrandfathered in at no additional cost. Their service does not change and they do not receive the new calls. If they would like the full package, they can purchase it.\n\nThey still count as 1.0 CLU each for coach load purposes.\n\nRoster reflection is being handled in a dedicated working session.",
+  "body": "Coach capacity & CLUs\n\nEach caregiver counts as 1.0 CLU. All caregivers and caregiver clients start at 1.0.\n\nNo separate caregiver cap. Caregivers are carried like standard CLUs, based on what each coach chooses to hold.\n\nChat structure\n\nOne caregiver chat per Thriver, held by the Thriver’s own coach.\n\nThe coach therefore runs both sides, the Thriver’s chat and the caregiver’s chat, under the confidentiality rule in CG4.\n\nCall cadence\n\nThe weekly caregiver group call is the standard rhythm.\n\nMonth one includes the 30-minute 1-on-1 onboarding call.\n\nAfter that, individual check-ins are monthly or as-needed, at coach discretion.\n\nThe caregiver chat mirrors the Thriver chat on response time and cadence.\n\nExisting caregivers\n\nGrandfathered in at no additional cost. Their service does not change and they do not receive the new calls. If they would like the full package, they can purchase it.\n\nThey still count as 1.0 CLU each for coach load purposes.\n\nRoster reflection is being handled in a dedicated working session.",
   "program": "caregiver",
   "zone": "caregiver",
   "status": "approved",
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Caregiver Add-On"
+  "sourceNote": "Master Program Policy v3.6 · Caregiver Add-On"
  },
  {
   "id": "cg6",
@@ -861,7 +861,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Caregiver Add-On"
+  "sourceNote": "Master Program Policy v3.6 · Caregiver Add-On"
  },
  {
   "id": "cg7",
@@ -877,7 +877,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Caregiver Add-On"
+  "sourceNote": "Master Program Policy v3.6 · Caregiver Add-On"
  },
  {
   "id": "c1",
@@ -893,7 +893,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Continuity"
+  "sourceNote": "Master Program Policy v3.6 · Continuity"
  },
  {
   "id": "c2",
@@ -909,7 +909,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Continuity"
+  "sourceNote": "Master Program Policy v3.6 · Continuity"
  },
  {
   "id": "c3",
@@ -925,7 +925,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Continuity"
+  "sourceNote": "Master Program Policy v3.6 · Continuity"
  },
  {
   "id": "c4",
@@ -941,7 +941,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Continuity"
+  "sourceNote": "Master Program Policy v3.6 · Continuity"
  },
  {
   "id": "c5",
@@ -957,7 +957,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Continuity"
+  "sourceNote": "Master Program Policy v3.6 · Continuity"
  },
  {
   "id": "c6",
@@ -973,7 +973,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Continuity"
+  "sourceNote": "Master Program Policy v3.6 · Continuity"
  },
  {
   "id": "c7",
@@ -989,7 +989,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Continuity"
+  "sourceNote": "Master Program Policy v3.6 · Continuity"
  },
  {
   "id": "b1",
@@ -1005,7 +1005,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
  },
  {
   "id": "b2",
@@ -1021,7 +1021,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
  },
  {
   "id": "b3",
@@ -1037,7 +1037,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
  },
  {
   "id": "b4",
@@ -1053,7 +1053,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
  },
  {
   "id": "b5",
@@ -1069,7 +1069,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
  },
  {
   "id": "b6",
@@ -1085,7 +1085,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
  },
  {
   "id": "b7",
@@ -1101,7 +1101,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
  },
  {
   "id": "b8",
@@ -1117,7 +1117,7 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
  },
  {
   "id": "b9",
@@ -1133,6 +1133,230 @@
   "reviewRefs": [],
   "version": 1,
   "updatedAt": "2026-09-17",
-  "sourceNote": "Master Program Policy v3.6 \u00b7 Beyond Recovery"
+  "sourceNote": "Master Program Policy v3.6 · Beyond Recovery"
+ },
+ {
+  "id": "ops-o1",
+  "section": "universal",
+  "order": 720,
+  "code": "O1",
+  "title": "Downgrade Save: \"money's tight\"",
+  "summary": "When a member says they can't afford their current recovery system, are out of cash, or ask for a cheaper option:",
+  "body": "When a member says they can't afford their current recovery system, are out of cash, or ask for a cheaper option: this is a SAVE conversation, not a plain cancellation. Never guilt, never pressure.\n\nThe play, in order:\n1. Acknowledge warmly in one line (\"I completely understand, and I'm glad you reached out\").\n2. Present Recovery School as the option built exactly for this: the self-guided recovery system at $47/month, with the weekly live Q&A call and the Recovery School community.\n3. Explain the switch mechanics: they cancel their current subscription first (Academy cancellations go through the cancellation form; submit at least 3 days before the renewal date so the system processes it in time). Their current access stays active until the end of the billing period they already paid for.\n4. Then they join Recovery School at https://www.skool.com/recovery-school/about - ALWAYS include this exact link in the reply - payment is taken directly through the Skool platform on that signup page, so a new card can be used there.\n5. Close the door gently open: they are always welcome back to Academy or Platinum when the time is right.\n\nDo NOT assert what content or progress carries over between recovery systems - if the member asks, the coordinator offers to check and confirms manually.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "ops-o2",
+  "section": "universal",
+  "order": 730,
+  "code": "O2",
+  "title": "Skool Navigation Basics",
+  "summary": "Where things live inside the Skool communities (Academy, School, Foundations) - the answers coordinators give daily:",
+  "body": "Where things live inside the Skool communities (Academy, School, Foundations) - the answers coordinators give daily:\n\n- GROUP CALL times and Zoom links: the Calendar tab inside their Skool community. Click the scheduled event and it links straight to the Zoom meeting (they may need to sign in to Zoom).\n- CALL REPLAYS: the Classroom section of their community. In Academy, replays are posted under the Call Replays category.\n- VIDEO MODULES / curriculum: the Classroom section. Platinum members: the Platinum Video Modules are in the Academy Classroom (scroll down; the direct link is in the approved link library).\n- MODULE UNLOCKS: some modules unlock by request. The member requests the unlock and receives an email to complete it. If the unlock button or email link does not work, that is a known friction point: the coordinator apologizes for the hiccup and unlocks it manually on our side - tell the member \"I'll get that unlocked for you right away\" rather than sending them back through the button.\n- NOTIFICATION SETTINGS: under the member's profile picture > Settings inside Skool. Members sometimes miss DM replies because chat notifications are off - suggest checking the chat bubble (top right) directly.\n- DMs: the chat bubble at the top right of Skool. Community posts and comments are separate from DMs.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "ops-o3",
+  "section": "universal",
+  "order": 740,
+  "code": "O3",
+  "title": "Discord vs Skool: who lives where",
+  "summary": "The standing rule from the real replies:",
+  "body": "The standing rule from the real replies: coaches are reached in DISCORD, coordinators are reached in SKOOL.\n\n- Coaching questions, symptom questions, anything for their coach: the member posts in their Discord chat. That is where coaches check daily and respond.\n- Time-sensitive messages for a coach (e.g. can't make tomorrow's call with Junior): the member messages the coach in their Discord chat FIRST; the coordinator can also relay a message as a backup, but Discord is the reliable path.\n- Admin, billing, membership, scheduling, access questions: Skool DMs to the coordinators (Brent / Dana).\n- Coaches typically respond in Discord after the morning group calls; exact response timing varies - do not promise a specific response time.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "ops-o4",
+  "section": "universal",
+  "order": 750,
+  "code": "O4",
+  "title": "Symptom and coaching questions: route, don't answer",
+  "summary": "When a member's DM asks about symptoms, crashes, flare-ups, adrenaline, pacing, whether to push through or rest, or any \"what should I do\" h",
+  "body": "When a member's DM asks about symptoms, crashes, flare-ups, adrenaline, pacing, whether to push through or rest, or any \"what should I do\" health question: the ops desk NEVER answers it, no matter how obvious the answer seems. One line of warm empathy, then route:\n\n\"That's exactly the kind of question your coaches are best placed to answer - post it in your Discord chat and they'll guide you through it. Want me to give them a heads-up as well?\"\n\nNever assess symptoms, never suggest pacing strategies, never reassure about medical safety, never say what worked for other members. The coordinator may relay the message to the coaching team but the guidance itself always comes from coaches.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "ops-o5",
+  "section": "universal",
+  "order": 760,
+  "code": "O5",
+  "title": "Billing mechanics (Whop): what to say and what to flag",
+  "summary": "How billing actually behaves, from three months of internal incident threads.",
+  "body": "How billing actually behaves, from three months of internal incident threads. The Master Policy doc owns refund decisions; this covers the mechanics members ask about.\n\n- Billing cycle wording: Whop \"monthly\" means every 30 days, and the actual calendar date slides earlier over time. The safe, accurate phrasing the team settled on: \"your card is charged every 30 days.\" Never promise a charge on \"the 12th of every month\" or state a renewal date from memory; the coordinator checks Whop for the exact date.\n- Failed payments: Whop retries a failed charge for about 5 days and then cancels the membership on its own, without telling anyone. A member reporting a failed payment is time-sensitive: acknowledge, reassure that access is safe while we sort it out, and flag the coordinator to check Whop the same day.\n- PayPal-funded subscriptions can never switch to a card later; that path requires a fresh subscription set up by ops. Never promise a payment-method change on an existing PayPal subscription.\n- Early payoff on an installment plan has no self-serve path in Whop; ops builds a replacement payment link. Draft promises the follow-up, never the mechanism or timing.\n- Some European banks block recurring cross-border charges and refuse to whitelist us. The known workaround is a one-time multi-month payment link built by ops. Acknowledge, flag, and let ops offer the workaround.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "ops-o6",
+  "section": "universal",
+  "order": 770,
+  "code": "O6",
+  "title": "Assessment and analysis delivery (NSHA, Monthly Recovery Analysis)",
+  "summary": "- Hotmail, Outlook, MSN, and Live addresses silently block our results emails:",
+  "body": "- Hotmail, Outlook, MSN, and Live addresses silently block our results emails: no bounce, no error, the email just never lands. If a member with a Microsoft address says their NSHA or Monthly Recovery Analysis never arrived, this is the most likely cause. The right draft: brief apology for the hiccup, then \"I'll send it to you directly here in the chat,\" and flag the coordinator to regenerate and deliver the PDF by Skool DM. Never draft \"check your spam folder\" as the whole answer, and never assure the member it was sent.\n- Which version by tier: Recovery School gets the standard NSHA. Academy gets the in-depth NSHA (no 1:1 walkthrough). Platinum gets the in-depth NSHA reviewed with their coach. Some older classroom videos mention a bonus strategy call with School; that offer is discontinued, so never promise it, and if a member asks, the coordinator explains kindly that it is no longer offered.\n- Monthly Recovery Analysis timing (Academy): the first one is prompted on Day 8 of the 30-Day Roadmap; after that a reminder DM goes out monthly a few days before their original join date. If a member says they never receive it, flag for a manual check (people are sometimes missing from the tracking file) instead of confirming it was sent.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "ops-o7",
+  "section": "universal",
+  "order": 780,
+  "code": "O7",
+  "title": "Tier changes: safe promises",
+  "summary": "Switching between recovery systems (School, Academy, Platinum, Continuity, Beyond Recovery) is a manual, multi-step process on our side:",
+  "body": "Switching between recovery systems (School, Academy, Platinum, Continuity, Beyond Recovery) is a manual, multi-step process on our side: cancellation, new invite, module unlocks, all timed around the renewal date.\n\n- Safe to promise: \"we'll coordinate the switch on our end so you don't lose access or get double-billed, and we'll confirm each step with you.\"\n- Never promise exact switch dates, automatic content carryover, or that module progress transfers. Unlocks and drip releases are done manually after a switch, so if a member reports locked content right after a tier change, the draft says we'll unlock it on our end right away (same play as the O2 module-unlock fix).\n- Cancellation forms only match a membership when the member uses the same email they signed up with. If a member says they cancelled but were still charged, the most common cause is a different email on the form. The draft asks, warmly and without blame, which email they used, and flags the coordinator to verify. The charge conversation itself follows Master Policy.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "ops-o8",
+  "section": "universal",
+  "order": 790,
+  "code": "O8",
+  "title": "Free trial timing",
+  "summary": "Skool's trial clock is not predictable to the hour from our side, and trial settings have shifted between launches.",
+  "body": "Skool's trial clock is not predictable to the hour from our side, and trial settings have shifted between launches. Two rules:\n\n- Never state the exact hour a trial ends or converts. Safe phrasing: \"your trial ends on [date]; to be safe, make any changes the day before.\"\n- Any trial question about charges, cancellation timing, or rejoining gets a warm acknowledgment plus a coordinator flag for a manual check, never a from-memory answer.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "ops-o9",
+  "section": "universal",
+  "order": 800,
+  "code": "O9",
+  "title": "Hard escalation triggers (always flag the coordinator)",
+  "summary": "These always produce a coordinator flag in the NOTE line.",
+  "body": "These always produce a coordinator flag in the NOTE line. They still get a draft (except crisis language, which gets no draft at all); the draft is cautious and promises the follow-up:\n\n- Crisis language, self-harm, or any message about not wanting to be here: the only draft is the approved crisis-resource response, plus an immediate coordinator and coach flag. Nothing else.\n- Refunds, disputed or double charges, chargebacks: per Master Policy these are case-by-case decisions. The draft acknowledges, says we will look into it personally, and promises a same-day follow-up. It never grants, denies, or predicts a refund.\n- Custom payment arrangements (discounts, lump sums, paused plans, repeat cohort access): ops builds these by hand. The draft promises the follow-up only.\n- Community moderation complaints or reports about another member: acknowledge and route internally. The draft never takes a position on the other member.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "ops-o10",
+  "section": "universal",
+  "order": 810,
+  "code": "O10",
+  "title": "Referrals and the Thriver Ambassador program",
+  "summary": "The old affiliate-link system was restructured.",
+  "body": "The old affiliate-link system was restructured. There is no self-serve affiliate link to send a member any more, so never invent one and never send a generic sign-up form as if it were their link.\n\n- Members who want to actively promote CFS Recovery (social media, content) can join the Thriver Ambassador program, a structured affiliate system where the team sets up special links for them. The coordinator confirms current details with Miguel before promising specifics.\n- A one-off referral (one friend or family member who wants to join) needs no link at all: the member just tells us the person's name and which recovery system they're interested in (Recovery School, Recovery Academy, or Platinum). We note the referral on our side and send the easy sign-up link for that recovery system.\n- Thank them warmly for sending someone our way; that is the tone of the real replies.",
+  "program": "universal",
+  "zone": "universal",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Ops Knowledge"
+ },
+ {
+  "id": "qa-qa1",
+  "section": "beyond",
+  "order": 820,
+  "code": "QA1",
+  "title": "Client pushing for Beyond but coach is not sure they are ready",
+  "summary": "Default to Continuity.",
+  "body": "Default to Continuity. Easier to move them forward later than pull them back after a poor Beyond experience.",
+  "program": "beyond",
+  "zone": "beyond",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Quick Answers"
+ },
+ {
+  "id": "qa-qa2",
+  "section": "beyond",
+  "order": 830,
+  "code": "QA2",
+  "title": "Academy or School member asking about Beyond without booking a call",
+  "summary": "Direct them to book a call with Junior.",
+  "body": "Direct them to book a call with Junior. No details about Beyond until the call happens.",
+  "program": "beyond",
+  "zone": "beyond",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Quick Answers"
+ },
+ {
+  "id": "qa-qa3",
+  "section": "beyond",
+  "order": 840,
+  "code": "QA3",
+  "title": "Lapsed Platinum member wants Beyond",
+  "summary": "They get the 14-day trial after Junior's call confirms readiness.",
+  "body": "They get the 14-day trial after Junior's call confirms readiness.",
+  "program": "beyond",
+  "zone": "beyond",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Quick Answers"
+ },
+ {
+  "id": "qa-qa4",
+  "section": "beyond",
+  "order": 850,
+  "code": "QA4",
+  "title": "Coach unsure between Platinum and Beyond for an Academy member",
+  "summary": "Flag it.",
+  "body": "Flag it. Junior and the coaching team decide together.",
+  "program": "beyond",
+  "zone": "beyond",
+  "status": "approved",
+  "reviewRefs": [],
+  "version": 1,
+  "updatedAt": "2026-09-25",
+  "sourceNote": "Reply tool policy corpus · Quick Answers"
  }
 ]
