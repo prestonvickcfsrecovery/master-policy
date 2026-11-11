@@ -15,6 +15,24 @@ const SECTIONS = [
   { key: "continuity", label: "Continuity", prefix: "C" },
   { key: "beyond", label: "Beyond Recovery", prefix: "B" },
 ];
+// Which proposals a shelf shows. Pulled out as a plain function so it can be
+// reasoned about and tested on its own: it is the only real logic in the split.
+// Status comes straight from the row, so "approved" and "declined" are whatever
+// was actually recorded - nothing is inferred.
+export function shelf(proposals, view, needle = "") {
+  const rows = (proposals || []).filter((p) =>
+    view === "open" ? p.status === "open" : p.status === view
+  );
+  const q = needle.trim().toLowerCase();
+  // The open shelf is short by definition, and filtering it would hide work.
+  if (view === "open" || !q) return rows;
+  return rows.filter((p) =>
+    [p.title, p.entry_code, p.entry_title, p.new_code, p.new_title, p.type,
+     p.author_name, p.author_email, p.decided_by, p.decision_note, p.rationale]
+      .some((f) => String(f || "").toLowerCase().includes(q))
+  );
+}
+
 const TEMPLATE = `Who this applies to and when.
 
 ### The rule
@@ -44,6 +62,8 @@ export default function Changes({ user }) {
   const [ready, setReady] = useState(false);
   const [preview, setPreview] = useState(false);
   const [formatting, setFormatting] = useState(false);
+  const [view, setView] = useState("open");   // deliberately not remembered between visits
+  const [find, setFind] = useState("");
   const isNew = form.kind === "new";
 
   // Type drives everything: picking "New policy" switches the form over and
@@ -107,8 +127,20 @@ export default function Changes({ user }) {
     if (form.kind === "new" && !form.newCode) setForm((f) => ({ ...f, newCode: suggestCode }));
   }, [suggestCode, form.kind]);
 
-  const open = useMemo(() => (proposals || []).filter((p) => p.status === "open"), [proposals]);
-  const decided = useMemo(() => (proposals || []).filter((p) => p.status !== "open"), [proposals]);
+  // The three shelves. The tab opens on "open" every time, so what is waiting on
+  // a decision is never buried under decisions already made. Nothing is moved or
+  // deleted - a decided proposal just lives on its own shelf from now on.
+  const open = useMemo(() => shelf(proposals, "open"), [proposals]);
+  const approved = useMemo(() => shelf(proposals, "approved"), [proposals]);
+  const declined = useMemo(() => shelf(proposals, "declined"), [proposals]);
+
+  const VIEWS = [
+    { key: "open", label: "Needs review", list: open },
+    { key: "approved", label: "Approved", list: approved },
+    { key: "declined", label: "Declined", list: declined },
+  ];
+  const current = VIEWS.find((v) => v.key === view) || VIEWS[0];
+  const shown = useMemo(() => shelf(proposals, current.key, find), [proposals, current.key, find]);
 
   async function formatDraft() {
     if (!form.proposedText.trim()) return;
@@ -260,18 +292,65 @@ export default function Changes({ user }) {
         <div>
           <h2 className="sec-h">Changes</h2>
           <p className="sec-p">
-            Proposals waiting on a decision, and every decision already made. Approving a proposal publishes
-            its wording straight into the policy and keeps the previous wording in the entry&apos;s history.
+            Proposals waiting on a decision, with every decision already made kept on its own shelf.
+            Approving a proposal publishes its wording straight into the policy and keeps the previous
+            wording in the entry&apos;s history.
           </p>
+
           {proposals === null ? (
             <div className="empty"><span className="spin" /> Loading…</div>
           ) : !proposals.length ? (
-            <div className="empty"><b>No proposals yet.</b><br />The first one starts on the right, or from any curriculum entry.</div>
+            <div className="empty"><b>No proposals yet.</b><br />The first one starts on the right, or from any policy entry.</div>
           ) : (
             <>
-              {open.length ? <><div className="grp">Waiting on a decision</div>{open.map((p) => <Card key={p.id} p={p} />)}</>
-                : <div className="empty">Nothing is waiting on a decision.</div>}
-              {decided.length ? <><div className="grp" style={{ marginTop: 26 }}>Decided</div>{decided.map((p) => <Card key={p.id} p={p} />)}</> : null}
+              <div style={{ display: "flex", gap: 7, flexWrap: "wrap", margin: "0 0 18px" }}>
+                {VIEWS.map((v) => (
+                  <button
+                    key={v.key}
+                    className={`btn sm${view === v.key ? "" : " ghost"}`}
+                    aria-pressed={view === v.key}
+                    onClick={() => { setView(v.key); setFind(""); }}
+                  >
+                    {v.label}
+                    <span style={{ opacity: view === v.key ? 0.75 : 0.6, marginLeft: 7, fontVariantNumeric: "tabular-nums" }}>
+                      {v.list.length}
+                    </span>
+                  </button>
+                ))}
+              </div>
+
+              {view !== "open" && current.list.length > 4 && (
+                <input
+                  className="finder"
+                  value={find}
+                  placeholder={`Search the ${current.label.toLowerCase()} shelf — code, title, who decided it`}
+                  onChange={(e) => setFind(e.target.value)}
+                />
+              )}
+
+              {shown.length ? (
+                shown.map((p) => <Card key={p.id} p={p} />)
+              ) : find.trim() ? (
+                <div className="empty">
+                  Nothing on the {current.label.toLowerCase()} shelf matches &ldquo;{find.trim()}&rdquo;.
+                </div>
+              ) : view === "open" ? (
+                <div className="empty">
+                  <b>Nothing is waiting on a decision.</b><br />
+                  {approved.length + declined.length > 0
+                    ? `${approved.length + declined.length} decision${approved.length + declined.length === 1 ? "" : "s"} already made — see the other shelves.`
+                    : "Proposals show up here as they are submitted."}
+                </div>
+              ) : (
+                <div className="empty">Nothing has been {view} yet.</div>
+              )}
+
+              {view !== "open" && find.trim() && shown.length ? (
+                <p className="note" style={{ marginTop: 12 }}>
+                  Showing {shown.length} of {current.list.length}.{" "}
+                  <button className="linkish" onClick={() => setFind("")}>Show all</button>
+                </p>
+              ) : null}
             </>
           )}
         </div>
